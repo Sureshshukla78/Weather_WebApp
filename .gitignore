@@ -1,0 +1,2 @@
+# gitignore file is a plain text file  where each line contains a pattern for files/directories to ignore.
+node_modules
