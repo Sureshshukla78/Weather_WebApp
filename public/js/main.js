@@ -10,8 +10,6 @@ const temp = document.getElementById('temp');
 const temp_status = document.getElementById('temp_status');
 const dataHide = document.querySelector('.middleLayer');
 
-
-
 const getInfo = async (e) => {
     e.preventDefault();
     let cityVal = cityName.value;
@@ -33,7 +31,7 @@ const getInfo = async (e) => {
 
             // updating favicon according to temp status
             const tempStatus =  arrData[0].weather[0].main;           
-            if (tempStatus == 'Sunny') {
+            if (tempStatus == 'Sunny' || 'Clear') {
                 temp_status.innerHTML = "<i class='fas fa-sun' style='color:#eccc68;'></i>";
             } else if (tempStatus == 'Clouds') {
                 temp_status.innerHTML = "<i class='fas fa-cloud' style='color:#dfe4ea;'></i>";
